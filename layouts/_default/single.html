@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ define "main" }}
 <header class="site-header">
   <h1>{{ .Title }}</h1>
   <div class="post-meta">
@@ -20,7 +19,6 @@
 </div>
 {{ end }}
 
-<!-- Article Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -28,11 +26,7 @@
   "headline": "{{ .Title }}",
   "datePublished": "{{ .Date.Format "2006-01-02" }}",
   "description": "{{ .Summary }}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ .Site.Params.author }}"
-  }
+  "author": { "@type": "Person", "name": "{{ .Site.Params.author }}" }
 }
 </script>
-{{ end }}
 {{ end }}
