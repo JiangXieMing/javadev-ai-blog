@@ -1,0 +1,21 @@
+{{ define "main" }}
+<header class="site-header">
+  <h1>{{ .Title }}</h1>
+  <p>{{ if .Params.description }}{{ .Params.description }}{{ end }}</p>
+</header>
+
+<main class="content">
+  <div class="posts-list">
+    {{ range .Pages }}
+    <article class="post-card">
+      <div class="post-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        · {{ .ReadingTime }} min read
+      </div>
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <p class="excerpt">{{ .Summary }}</p>
+    </article>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

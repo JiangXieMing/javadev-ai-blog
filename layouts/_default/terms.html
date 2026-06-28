@@ -1,0 +1,13 @@
+{{ define "main" }}
+<header class="site-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+<main class="content">
+  <div class="tags-list">
+    {{ range .Data.Terms.Alphabetical }}
+    <a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a>
+    {{ end }}
+  </div>
+</main>
+{{ end }}
