@@ -25,8 +25,7 @@ Everything I write about, I've built and deployed. No theoretical fluff.
 
 ## Get in Touch
 
-- GitHub: [javadevai](https://github.com/javadevai)
-- Twitter/X: [@javadevai](https://twitter.com/javadevai)
-- Email: hello@javadev-ai.com
+- GitHub: [JiangXieMing](https://github.com/JiangXieMing)
+- Twitter/X: [@xmj8023](https://twitter.com/xmj8023)
 
 *Subscribe to the RSS feed to get new articles delivered to your reader.*
