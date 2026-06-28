@@ -1,0 +1,25 @@
+{{ define "main" }}
+<header class="site-header">
+  <h1>{{ .Site.Title }}</h1>
+  <p class="subtitle">{{ .Site.Params.description }}</p>
+</header>
+
+<main class="content">
+  <section class="posts">
+    <h2>Latest Articles</h2>
+    {{ range where .Site.RegularPages "Section" "posts" }}
+    <article class="post-card">
+      <div class="post-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        · {{ .ReadingTime }} min read
+        {{ with .Params.tags }}
+        · {{ range first 3 . }}<span class="tag">#{{ . }}</span> {{ end }}
+        {{ end }}
+      </div>
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <p class="excerpt">{{ .Summary }}</p>
+    </article>
+    {{ end }}
+  </section>
+</main>
+{{ end }}

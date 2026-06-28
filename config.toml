@@ -1,0 +1,54 @@
+baseURL = "https://javadev-ai.com/"
+languageCode = "en-us"
+title = "JavaDev AI - Java + AI in Practice"
+paginate = 15
+copyright = "© 2026 JavaDev AI. All rights reserved."
+
+[params]
+  description = "Practical guides on Java development, AI integration, LangChain4j, Spring AI, and building AI-powered developer tools. Written by a 10-year Java veteran."
+  author = "JavaDev AI"
+  keywords = ["Java", "AI", "LangChain4j", "Spring AI", "code review", "AI agent", "developer tools", "LLM", "Spring Boot"]
+  favicon = ""
+  googleAnalytics = ""
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+[permalinks]
+  posts = "/:slug/"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.8
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 3
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
