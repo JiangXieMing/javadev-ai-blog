@@ -29,5 +29,6 @@ Everything I write about, I've built and deployed. No theoretical fluff.
 - Twitter/X: [@xmj8023](https://twitter.com/xmj8023)
 
 Email: jxm58585@gmail.com
+- WeChat: EternalRobotJ
 
 *Subscribe to the RSS feed to get new articles delivered to your reader.*
